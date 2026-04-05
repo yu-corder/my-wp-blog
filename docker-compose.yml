@@ -1,0 +1,27 @@
+services:
+  wp-db:
+    image: mariadb
+    container_name: wp-mariadb-local
+    environment:
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      TZ: Asia/Tokyo
+    volumes:
+      - ./wp-db-data:/var/lib/mysql
+
+  wordpress:
+    image: wordpress:latest
+    container_name: wp-app-local
+    depends_on:
+      - wp-db
+    ports:
+      - "8080:80"
+    environment:
+      WORDPRESS_DB_HOST: wp-db
+      WORDPRESS_DB_USER: ${MYSQL_USER}
+      WORDPRESS_DB_PASSWORD: ${MYSQL_PASSWORD}
+      WORDPRESS_DB_NAME: ${MYSQL_DATABASE}
+    volumes:
+      - ./wp-content:/var/www/html/wp-content
