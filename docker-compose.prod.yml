@@ -12,3 +12,10 @@ services:
       service: wordpress
     restart: always
     container_name: wp-app-prod
+    environment:
+      WORDPRESS_DB_HOST: wp-mariadb-prod
+      WORDPRESS_CONFIG_EXTRA: |
+        define('WP_HOME', 'https://yu-syumilog.com');
+        define('WP_SITEURL', 'https://yu-syumilog.com');
+        define('WP_DEBUG', true);
+        define('WP_DEBUG_DISPLAY', true);
