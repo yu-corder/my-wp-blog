@@ -1,6 +1,6 @@
 services:
   wp-db:
-    image: mariadb
+    image: mariadb:10.6
     container_name: wp-mariadb-local
     environment:
       MYSQL_DATABASE: ${MYSQL_DATABASE}

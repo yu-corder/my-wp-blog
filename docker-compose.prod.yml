@@ -1,0 +1,14 @@
+services:
+  wp-db:
+    extends:
+      file: docker-compose.yml
+      service: wp-db
+    restart: always
+    container_name: wp-mariadb-prod
+
+  wordpress:
+    extends:
+      file: docker-compose.yml
+      service: wordpress
+    restart: always
+    container_name: wp-app-prod
