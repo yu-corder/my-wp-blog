@@ -22,6 +22,6 @@ wp-db-data/
 wp-content/plugins/
 wp-content/upgrade/
 wp-content/uploads/
-wp-content/themes/cocoon/
+wp-content/themes/cocoon-master/
 
 !wp-content/themes/cocoon-child/
