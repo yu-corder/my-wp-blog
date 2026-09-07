@@ -1,0 +1,495 @@
+# Translation of Plugins - Two Factor - Stable (latest release) in Japanese
+# This file is distributed under the same license as the Plugins - Two Factor - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2026-07-25 15:35:47+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/4.0.3\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Plugins - Two Factor - Stable (latest release)\n"
+
+#: two-factor.php:118
+msgid "Settings not available."
+msgstr "設定は利用できません。"
+
+#: settings/class-two-factor-settings.php:92
+msgid "Save Settings"
+msgstr "設定を保存"
+
+#: settings/class-two-factor-settings.php:71
+msgid "No providers found."
+msgstr "プロバイダが見つかりません。"
+
+#: settings/class-two-factor-settings.php:67
+msgid "Providers"
+msgstr "プロバイダ"
+
+#: settings/class-two-factor-settings.php:63
+msgid "Choose which Two-Factor providers are available on this site. All providers are enabled by default."
+msgstr "このサイトで利用する2要素認証プロバイダを選択します。すべてのプロバイダはデフォルトで有効です。"
+
+#: settings/class-two-factor-settings.php:62
+msgid "Enabled Providers"
+msgstr "有効なプロバイダ"
+
+#: settings/class-two-factor-settings.php:61 two-factor.php:91
+#: two-factor.php:117
+msgid "Two-Factor Settings"
+msgstr "2要素認証の設定"
+
+#: settings/class-two-factor-settings.php:44
+msgid "Settings saved."
+msgstr "設定を保存しました。"
+
+#: providers/class-two-factor-backup-codes.php:218
+msgid "Copy Codes"
+msgstr "コードをコピー"
+
+#. translators: %s: provider label.
+#: class-two-factor-core.php:2435
+msgid "The %s method must be configured before it can be enabled."
+msgstr "%s を有効化するには、先に設定を行う必要があります。"
+
+#. translators: 1: username, 2: user ID, 3: URL to developer docs
+#: class-two-factor-core.php:1999
+msgid ""
+"Hello, this is a notice from the Two Factor plugin to inform you that an unusually high number of failed login attempts have been detected on the %1$s account (ID %2$d).\n"
+"\t\t        Those attempts successfully entered the user's password, and were only blocked because they entered invalid second authentication factors.\n"
+"\t\t        To protect their account, the password has automatically been reset, and they have been notified that they will need to create a new one.\n"
+"\t\t        If you do not wish to receive these notifications, you can disable them with the `two_factor_notify_admin_user_password_reset` filter. See %3$s for more information.\n"
+"\t\t\t\tThank you"
+msgstr ""
+"こちらは Two Factor プラグインからのお知らせです。%1$s アカウント (ID %2$d) で、通常を超えるログイン失敗が検出されました。\n"
+"\t\t        これらの試行ではパスワードが正しく入力されていましたが、第2認証要素が無効だったためブロックされました。\n"
+"\t\t        アカウントを保護するため、パスワードは自動的にリセットされ、新しいパスワードの作成が必要である旨をユーザーに通知しました。\n"
+"\t\t        この通知を受け取りたくない場合は、`two_factor_notify_admin_user_password_reset` フィルターで無効にできます。詳細は %3$s をご覧ください。\n"
+"\t\t\t\tよろしくお願いします"
+
+#. translators: %s: username
+#: class-two-factor-core.php:1993
+msgid "Compromised password for %s has been reset"
+msgstr "%s のパスワードが漏洩したためリセットされました"
+
+#: class-two-factor-core.php:1977
+msgid "Your password was compromised and has been reset"
+msgstr "パスワードが漏洩したためリセットされました"
+
+#. translators: 1: username, 2: site URL, 3: URL to password best-practices
+#. article, 4: URL to reset password
+#: class-two-factor-core.php:1962
+msgid ""
+"Hello %1$s, an unusually high number of failed login attempts have been detected on your account at %2$s.\n"
+"\t\t\t\tThese attempts successfully entered your password, and were only blocked because they failed to enter your second authentication factor. Despite not being able to access your account, this behavior indicates that the attackers have compromised your password. The most common reasons for this are that your password was easy to guess, or was reused on another site which has been compromised.\n"
+"\t\t\t\tTo protect your account, your password has been reset, and you will need to create a new one. For advice on setting a strong password, please read %3$s\n"
+"\t\t\t\tTo pick a new password, please visit %4$s\n"
+"\t\t\t\tThis is an automated notification. If you would like to speak to a site administrator, please contact them directly."
+msgstr ""
+"%1$s 様、%2$s のアカウントで通常を超えるログイン失敗が検出されました。\n"
+"\t\t\t\tこれらの試行ではパスワードが正しく入力されていましたが、第2認証要素の入力に失敗したためブロックされました。アカウントへの不正アクセスは防がれましたが、この状況はパスワードが漏洩していることを示しています。主な原因として、パスワードが推測しやすいものだったか、別の漏洩したサイトで同じパスワードを使い回していたことが考えられます。\n"
+"\t\t\t\tアカウントを保護するため、パスワードをリセットしました。新しいパスワードを作成してください。強力なパスワードの設定方法については、%3$s をご覧ください。\n"
+"\t\t\t\t新しいパスワードを設定するには、%4$s にアクセスしてください。\n"
+"\t\t\t\tこれは自動通知メールです。サイト管理者に連絡したい場合は、直接お問い合わせください。"
+
+#: class-two-factor-core.php:704
+msgid "Error: You have Two Factor method(s) enabled, but the provider(s) no longer exist. Please contact a site administrator for assistance."
+msgstr "エラー: 2要素認証の方法が有効になっていますが、プロバイダが存在しません。サイト管理者にお問い合わせください。"
+
+#: class-two-factor-core.php:400
+msgid "User Settings"
+msgstr "ユーザー設定"
+
+#: class-two-factor-core.php:393
+msgid "Plugin Settings"
+msgstr "プラグイン設定"
+
+#. Description of the plugin
+#: two-factor.php
+msgid "Enable Two-Factor Authentication using time-based one-time passwords, email, and backup verification codes."
+msgstr "時間ベースのワンタイムパスワード、メール、バックアップ認証コードを使用した2要素認証を有効化します。"
+
+#. translators: 1: server date and time
+#: providers/class-two-factor-totp.php:414
+msgid "If the code is rejected, check that your web server time is accurate: %1$s. Your device and server times must match."
+msgstr "認証コードが拒否された場合は、Web サーバーの時刻 (%1$s) が正確かどうかご確認ください。端末とサーバーの時刻は一致している必要があります。"
+
+#: providers/class-two-factor-totp.php:386
+msgid "If scanning isn't possible or doesn't work, click on the QR code or use the secret key shown below to add the account to your chosen app:"
+msgstr "QR コードを読み取れない場合は、QR コードをクリックするか、以下のシークレットキーを使って認証アプリにアカウントを追加してください:"
+
+#: providers/class-two-factor-totp.php:377
+msgid "Scan this QR code using the app you installed:"
+msgstr "インストールした認証アプリを使用して、以下の QR コードをスキャンしてください:"
+
+#: providers/class-two-factor-totp.php:374
+msgid "Install an authenticator app on your desktop/laptop and/or phone. Popular examples are Microsoft Authenticator, Google Authenticator and Authy."
+msgstr "デスクトップ/ノートパソコン、またはスマートフォンに認証アプリをインストールしてください。代表的なアプリには、Microsoft Authenticator、Google Authenticator、Authy などがあります。"
+
+#: providers/class-two-factor-totp.php:370
+msgid "Please follow these steps in order to complete setup:"
+msgstr "セットアップを完了するには、次の手順に従ってください:"
+
+#. translators: %1$s: IP address of user, %2$s: user login
+#: providers/class-two-factor-email.php:303
+msgid "A user from IP address %1$s has successfully authenticated as %2$s. If this wasn't you, please change your password."
+msgstr "IP アドレス %1$s から、ユーザー %2$s として認証が行われました。心当たりがない場合は、パスワードを変更してください。"
+
+#. translators: %d: number of minutes
+#: providers/class-two-factor-email.php:298
+msgid "This code will expire in %d minutes."
+msgstr "この認証コードは%d分で有効期限が切れます。"
+
+#: providers/class-two-factor-email.php:294
+msgid "Please complete the login by entering the verification code below:"
+msgstr "ログインを完了するには、以下の認証コードを入力してください:"
+
+#. translators: %s: site name
+#: providers/class-two-factor-email.php:288
+msgid "[%s] Login confirmation code"
+msgstr "[%s] ログイン確認コード"
+
+#: class-two-factor-core.php:1096 class-two-factor-core.php:1600
+#: class-two-factor-core.php:1741 class-two-factor-core.php:1816
+msgid "Two-factor provider not available for this user."
+msgstr "このユーザーには利用できる2要素認証プロバイダがありません。"
+
+#: providers/class-two-factor-totp.php:397
+msgid "Enter the code generated by the Authenticator app to complete the setup:"
+msgstr "認証アプリで生成されたコードを入力して、セットアップを完了してください:"
+
+#: providers/class-two-factor-totp.php:380
+msgid "Loading…"
+msgstr "読み込み中…"
+
+#: providers/class-two-factor-backup-codes.php:407
+#: providers/class-two-factor-email.php:373
+#: providers/class-two-factor-totp.php:408
+#: providers/class-two-factor-totp.php:801
+msgid "Verify"
+msgstr "検証"
+
+#: providers/class-two-factor-backup-codes.php:209
+msgid "This invalidates all currently stored codes."
+msgstr "これにより、現在保存されているすべてのコードが無効になります。"
+
+#: class-two-factor-core.php:2265
+msgid "Recommended"
+msgstr "おすすめ"
+
+#: class-two-factor-core.php:2265
+msgid "This method is more secure and easy to use"
+msgstr "より安全で使いやすい方法です"
+
+#: class-two-factor-core.php:2246
+msgid "Authentication for REST API and XML-RPC must use application passwords (defined above) instead of your regular password."
+msgstr "REST API と XML-RPC の認証には、通常のパスワードの代わりにアプリケーションパスワード (上記) を使用する必要があります。"
+
+#: class-two-factor-core.php:2241
+msgid "Configure a primary two-factor method along with a backup method, such as Recovery Codes, to avoid being locked out if you lose access to your primary method. Methods marked as recommended are more secure and easier to use."
+msgstr "メインの2要素認証方法とリカバリコードなどのバックアップ方法を設定しておくことで、メインの方法が使えなくなった場合のロックアウトを防げます。おすすめと表示されている方法は、より安全で使いやすいです。"
+
+#: class-two-factor-core.php:2118
+msgid "No providers are available for your account."
+msgstr "アカウントで利用可能なプロバイダがありません。"
+
+#: providers/class-two-factor-totp.php:159
+msgid "Use your authenticator app for time-based one-time passwords (TOTP)"
+msgstr "認証アプリを使用し、時間ベースのワンタイムパスワード (TOTP) で認証"
+
+#: class-two-factor-core.php:2300
+msgid "Select the primary method to use for two-factor authentication when signing into this site."
+msgstr "サイトログイン時にメインで使用する2要素認証の種類を選択します。"
+
+#: class-two-factor-core.php:2293
+msgid "Default"
+msgstr "デフォルト"
+
+#: class-two-factor-core.php:2290
+msgid "Primary Method"
+msgstr "メイン認証方法"
+
+#. translators: %s: authentication method name.
+#: class-two-factor-core.php:2263
+msgid "Enable %s"
+msgstr "%sを有効化"
+
+#: providers/class-two-factor-totp.php:211
+msgid "Unable to disable TOTP provider for this user."
+msgstr "ユーザーの TOTP プロバイダを無効化できません。"
+
+#: class-two-factor-core.php:2131
+msgid "To prevent being locked out of your account, consider enabling a backup method like Recovery Codes in case you lose access to your primary authentication method."
+msgstr "メインの認証方法が使用できなくなった場合のロックアウトを防ぐため、リカバリコードなどのバックアップ認証方法も設定してください。"
+
+#: providers/class-two-factor-totp.php:357
+#: providers/class-two-factor-totp.php:432
+msgid "Authenticator App QR Code"
+msgstr "認証アプリの QR コード"
+
+#. Author of the plugin
+#: two-factor.php
+msgid "WordPress.org Contributors"
+msgstr "WordPress.org コントリビューター"
+
+#: providers/class-two-factor-totp.php:443
+msgid "Reset authenticator app"
+msgstr "認証アプリをリセット"
+
+#: providers/class-two-factor-totp.php:439
+msgid "An authenticator app is currently configured. You will need to re-scan the QR code on all devices if reset."
+msgstr "現在、認証アプリが設定されています。リセットする場合は、すべての端末で QR コードを再度スキャンする必要があります。"
+
+#: providers/class-two-factor-totp.php:150
+msgctxt "Provider Label"
+msgid "Authenticator App"
+msgstr "認証アプリ"
+
+#. translators: the two factor provider name
+#: providers/class-two-factor-provider.php:61
+msgid "Use %s"
+msgstr "%s を使う"
+
+#: providers/class-two-factor-email.php:65
+msgid "Send a code to your email"
+msgstr "メールアドレスにコードを送信"
+
+#: providers/class-two-factor-backup-codes.php:393
+msgid "Recovery Code:"
+msgstr "リカバリコード:"
+
+#: providers/class-two-factor-backup-codes.php:381
+msgid "Enter a recovery code."
+msgstr "リカバリコードを入力してください。"
+
+#: providers/class-two-factor-backup-codes.php:330
+msgid "Unable to enable recovery codes for this user."
+msgstr "ユーザーのリカバリコードを有効化できません。"
+
+#. translators: %s: the site's domain
+#: providers/class-two-factor-backup-codes.php:310
+msgid "Two-Factor Recovery Codes for %s"
+msgstr "%s の2要素認証リカバリコード"
+
+#: providers/class-two-factor-backup-codes.php:206
+msgid "Generate new recovery codes"
+msgstr "新しいリカバリコードを生成"
+
+#. translators: %s: count
+#: providers/class-two-factor-backup-codes.php:198
+#: providers/class-two-factor-backup-codes.php:326
+msgid "%s unused code remaining, each recovery code can only be used once."
+msgid_plural "%s unused codes remaining, each recovery code can only be used once."
+msgstr[0] ""
+"未使用のリカバリコードが%s件残っています。\n"
+"リカバリコードはそれぞれ1回のみ使用できます。"
+
+#: providers/class-two-factor-backup-codes.php:153
+msgid "Use a recovery code"
+msgstr "リカバリコードを使用"
+
+#: providers/class-two-factor-backup-codes.php:144
+msgctxt "Provider Label"
+msgid "Recovery Codes"
+msgstr "リカバリコード"
+
+#: class-two-factor-core.php:2104
+msgid "Revalidate now"
+msgstr "今すぐ再検証"
+
+#: class-two-factor-core.php:2103
+msgid "To update your Two-Factor options, you must first revalidate your session."
+msgstr "2要素認証の設定を更新するには、まずセッションを再検証する必要があります。"
+
+#: class-two-factor-core.php:1783
+msgid "You have revalidated successfully."
+msgstr "再検証を正常に完了しました。"
+
+#: class-two-factor-core.php:1541
+msgid "Two Factor Revalidation required."
+msgstr "2要素認証の再検証が必要です。"
+
+#: class-two-factor-core.php:1188
+msgid "Having Problems?"
+msgstr "問題がありますか ?"
+
+#. translators: Example auth code.
+#: providers/class-two-factor-totp.php:404
+msgid "eg. %s"
+msgstr "例: %s"
+
+#: providers/class-two-factor-totp.php:254
+msgid "Unable to enable TOTP provider for this user."
+msgstr "このユーザーの TOTP プロバイダを有効にできません。"
+
+#: class-two-factor-core.php:2032
+msgid "Password Reset"
+msgstr "パスワードリセット"
+
+#: class-two-factor-core.php:2028
+msgid "If you are the owner of this account, please check your email for instructions on regaining access."
+msgstr "このアカウントの所有者であれば、アクセス回復のための手順をメールで確認してください。"
+
+#: class-two-factor-core.php:2027
+msgid "There have been too many failed two-factor authentication attempts, which often indicates that the password has been compromised. The password has been reset in order to protect the account."
+msgstr "2要素認証の失敗回数が多すぎるため、パスワードが漏洩している可能性があります。アカウント保護のため、パスワードがリセットされました。"
+
+#. translators: %s: human-readable time delay until another attempt can be
+#. made.
+#: class-two-factor-core.php:1839
+msgid "ERROR: Too many invalid verification codes, you can try again in %s. This limit protects your account against automated attacks."
+msgstr "エラー: 無効な認証コードが多すぎます。%s後に再度お試しください。この制限はアカウントを自動攻撃から守るためのものです。"
+
+#. translators: %s: URL to create a new password.
+#: class-two-factor-core.php:1062
+msgid "Your password was reset because of too many failed Two Factor attempts. You will need to <a href=\"%s\">create a new password</a> to regain access. Please check your email for more information."
+msgstr "2要素認証の失敗が多すぎたため、パスワードがリセットされました。アクセスを回復するには、<a href=\"%s\">新しいパスワードを設定</a>する必要があります。詳細はメールをご確認ください。"
+
+#. translators: 1: number of failed login attempts, 2: time since last failed
+#. attempt
+#: class-two-factor-core.php:1008
+msgid "WARNING: Your account has attempted to login %1$s time without providing a valid two factor token. The last failed login occurred %2$s ago. If this wasn't you, you should reset your password."
+msgid_plural "WARNING: Your account has attempted to login %1$s times without providing a valid two factor token. The last failed login occurred %2$s ago. If this wasn't you, you should reset your password."
+msgstr[0] "警告: 有効な2要素トークンなしでのログインが%1$s回試行されました。最後の失敗は%2$s前です。心当たりがない場合は、パスワードをリセットしてください。"
+
+#: providers/class-two-factor-totp.php:784
+msgid "Enter the code generated by your authenticator app."
+msgstr "認証アプリで生成されたコードを入力してください。"
+
+#: providers/class-two-factor-totp.php:242
+msgid "Invalid Two Factor Authentication secret key."
+msgstr "二要素認証の秘密鍵が無効です。"
+
+#: providers/class-two-factor-totp.php:246
+msgid "Invalid Two Factor Authentication code."
+msgstr "二要素認証コードが無効です。"
+
+#: providers/class-two-factor-totp.php:250
+msgid "Unable to save Two Factor Authentication code. Please re-scan the QR code and enter the code provided by your application."
+msgstr "2要素認証コードを保存できません。QR コードを再度スキャンし、アプリに表示されたコードを入力してください。"
+
+#: providers/class-two-factor-totp.php:401
+#: providers/class-two-factor-totp.php:791
+msgid "Authentication Code:"
+msgstr "認証コード:"
+
+#. translators: %s: email address
+#: providers/class-two-factor-email.php:443
+msgid "Authentication codes will be sent to %s."
+msgstr "認証コードが %s に送信されます。"
+
+#: providers/class-two-factor-email.php:375
+msgid "Resend Code"
+msgstr "コードを再送信"
+
+#: providers/class-two-factor-email.php:360
+msgid "A verification code has been sent to the email address associated with your account."
+msgstr "アカウントに関連付けられたメールアドレスに、確認コードが送信されました。"
+
+#: providers/class-two-factor-email.php:56
+msgctxt "Provider Label"
+msgid "Email"
+msgstr "メール"
+
+#: providers/class-two-factor-dummy.php:60
+msgid "Yup."
+msgstr "はい。"
+
+#: providers/class-two-factor-dummy.php:50
+msgid "Are you really you?"
+msgstr "本当にあなたですか ?"
+
+#: providers/class-two-factor-dummy.php:33
+msgctxt "Provider Label"
+msgid "Dummy Method"
+msgstr "ダミーメソッド"
+
+#: providers/class-two-factor-email.php:366
+msgid "Verification Code:"
+msgstr "認証コード:"
+
+#: providers/class-two-factor-backup-codes.php:219
+msgid "Download Codes"
+msgstr "コードをダウンロード"
+
+#: providers/class-two-factor-backup-codes.php:216
+msgid "Write these down! Once you navigate away from this page, you will not be able to view these codes again."
+msgstr "必ずメモしておいてください ! このページを離れると、これらのコードは再度確認できなくなります。"
+
+#. translators: %s: URL for code regeneration
+#: providers/class-two-factor-backup-codes.php:126
+msgid "Two-Factor: You are out of recovery codes and need to <a href=\"%s\">regenerate!</a>"
+msgstr "Two-Factor: リカバリコードがありません。<a href=\"%s\">再生成</a>してください !"
+
+#: includes/function.login-header.php:133
+msgid "Powered by WordPress"
+msgstr "Powered by WordPress"
+
+#: includes/function.login-header.php:130
+msgid "Usage of the title attribute on the login logo is not recommended for accessibility reasons. Use the link text instead."
+msgstr "アクセシビリティの観点から、ログインロゴに title 属性を使用することは推奨されません。代わりにリンクテキストを使用してください。"
+
+#: includes/function.login-header.php:104
+msgid "https://wordpress.org/"
+msgstr "https://ja.wordpress.org/"
+
+#. translators: %s: Login screen title.
+#: includes/function.login-header.php:57
+msgid "Recovery Mode &#8212; %s"
+msgstr "リカバリーモード &#8212; %s"
+
+#. translators: Login screen title. 1: Login screen name, 2: Network or site
+#. name.
+#: includes/function.login-header.php:53
+msgid "%1$s &lsaquo; %2$s &#8212; WordPress"
+msgstr "%1$s &lsaquo; %2$s &#8212; WordPress"
+
+#. translators: %s: Site title.
+#: includes/function.login-footer.php:29
+msgctxt "site"
+msgid "&larr; Go to %s"
+msgstr "&larr; %s へ移動"
+
+#: class-two-factor-core.php:2148 class-two-factor-core.php:2153
+msgid "Two-Factor Options"
+msgstr "2要素認証の設定"
+
+#: class-two-factor-core.php:2066
+msgid "Disabled"
+msgstr "無効"
+
+#: class-two-factor-core.php:2045 two-factor.php:92
+msgid "Two-Factor"
+msgstr "Two-Factor"
+
+#: class-two-factor-core.php:1676
+msgid "You have logged in successfully."
+msgstr "ログインに成功しました。"
+
+#: class-two-factor-core.php:1862
+msgid "ERROR: Invalid verification code."
+msgstr "エラー: 無効な確認コードです。"
+
+#: class-two-factor-core.php:984 class-two-factor-core.php:1615
+msgid "Failed to create a login nonce."
+msgstr "ログイン nonce を作成できませんでした。"
+
+#: class-two-factor-core.php:915
+msgid "Error: API login for user disabled."
+msgstr "エラー: ユーザーの API ログインは無効です。"
+
+#. Author URI of the plugin
+#: two-factor.php
+msgid "https://github.com/wordpress/two-factor/graphs/contributors"
+msgstr "https://github.com/wordpress/two-factor/graphs/contributors"
+
+#. Plugin URI of the plugin
+#: two-factor.php
+msgid "https://wordpress.org/plugins/two-factor/"
+msgstr "https://ja.wordpress.org/plugins/two-factor/"
+
+#. Plugin Name of the plugin
+#: two-factor.php
+msgid "Two Factor"
+msgstr "Two Factor"
