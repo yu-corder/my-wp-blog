@@ -25,3 +25,6 @@ wp-content/uploads/
 wp-content/themes/cocoon-master/
 
 !wp-content/themes/cocoon-child/
+# Backup files
+/backup/
+/backup-theme.tar.gz
