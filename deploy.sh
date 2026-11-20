@@ -15,7 +15,7 @@ echo "==> Pull WordPress image"
 "${COMPOSE[@]}" pull wordpress
 
 echo "==> Recreate WordPress container if needed"
-"${COMPOSE[@]}" up -d --no-deps wordpress
+"${COMPOSE[@]}" up -d --no-deps --renew-anon-volumes wordpress
 
 echo "==> Restart WordPress to reload PHP configuration"
 "${COMPOSE[@]}" restart wordpress
